@@ -1,0 +1,11 @@
+127.0.0.1 - - [10/Dec/2025:15:50:33 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:50:33 +0530] "GET /first_servlet/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:50:53 +0530] "GET /first_servlet/harrypotter?email=example%40gmail.com&password=example%4012345 HTTP/1.1" 200 54
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:51:31 +0530] "GET /first_servlet/login.html HTTP/1.1" 200 352
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:51:33 +0530] "GET /first_servlet/harrypotter?email=siddhu%40gmail.com&password=shiddhu%4012345 HTTP/1.1" 200 27
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:51:40 +0530] "GET /first_servlet/harrypotter?email=aS%40gmail.com&password=shiddhu%4012345 HTTP/1.1" 200 49
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:51:45 +0530] "GET /first_servlet/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:51:48 +0530] "GET /first_servlet/harrypotter?email=siddhu%40gmail.com&password=asdfghj HTTP/1.1" 200 29
+127.0.0.1 - - [10/Dec/2025:15:52:20 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:52:21 +0530] "GET /first_servlet/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2025:15:52:25 +0530] "GET /first_servlet/harrypotter?email=siddhu%40gmail.com&password=shiddhu%4012345 HTTP/1.1" 200 50

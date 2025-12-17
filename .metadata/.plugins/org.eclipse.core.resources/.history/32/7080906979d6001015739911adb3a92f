@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+	<form action="harrypotter">
+		<label>Email</label> <input type="email" name="email"
+			value="siddhu@gmail.com"> <br> <label>Password</label>
+		<input type="password" name="password" value="shiddhu@12345">
+		<br>
+		<button>Login</button>
+	</form>
+</body>
+</html>

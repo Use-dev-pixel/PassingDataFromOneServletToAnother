@@ -1,0 +1,9 @@
+127.0.0.1 - - [11/Dec/2025:15:40:41 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:40:42 +0530] "GET /second_servlet/login.html HTTP/1.1" 200 360
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:40:50 +0530] "POST /second_servlet/login HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:41:17 +0530] "GET /second_servlet/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:41:17 +0530] "GET /second_servlet/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:41:17 +0530] "GET /second_servlet/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:41:17 +0530] "GET /second_servlet/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:41:18 +0530] "POST /second_servlet/login HTTP/1.1" 405 753
+0:0:0:0:0:0:0:1 - - [11/Dec/2025:15:42:02 +0530] "POST /second_servlet/login HTTP/1.1" 405 753

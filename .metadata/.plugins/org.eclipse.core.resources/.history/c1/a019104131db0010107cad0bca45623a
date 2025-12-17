@@ -1,0 +1,31 @@
+package org.jsp;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/servlet1")
+public class Servlet1 extends HttpServlet {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String email=req.getParameter("email");
+		String password=req.getParameter("password");
+		
+		System.out.println(email);
+		System.out.println(password);
+		
+		PrintWriter out=resp.getWriter();
+		out.println("<form action='servlet2'>");
+		out.println("<input type='email' value="+email+" name='email'>");
+		out.println("<input type='password' value="+password+" name='password'>");
+		out.println("<button>go to servlet 2</button>");
+		out.println("</form>");
+		
+		
+	}
+}
