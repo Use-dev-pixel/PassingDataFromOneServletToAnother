@@ -11,15 +11,16 @@ import javax.servlet.http.HttpServletResponse;
 public class Home extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//		PrintWriter out= resp.getWriter();
-//		out.println("<html>");
-//		out.println("<body>");
-//		out.println("<h1>Hello from home page</h1>");
-//		out.println("</body>");
-//		out.println("</html>");
-		
-		
-//		resp.sendRedirect("https://www.google.com/");
-		resp.sendRedirect("x.html");
+		PrintWriter out= resp.getWriter();
+		out.println("<html>");
+		out.println("<body>");
+		out.println("<form action='profile' method='post'>");
+		out.println("<button>Profile</button>");
+		out.println("</form>");
+		out.println("<form action='logout' method='post'>");
+		out.println("<button>Logout</button>");
+		out.println("</form>");
+		out.println("</body>");
+		out.println("</html>");
 	}
 }

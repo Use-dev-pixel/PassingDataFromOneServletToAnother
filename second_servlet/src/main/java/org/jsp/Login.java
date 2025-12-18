@@ -12,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class Login extends HttpServlet {
 	@Override
@@ -33,6 +34,11 @@ public class Login extends HttpServlet {
 			if (resultSet.next()) {
 				String dbPassword = resultSet.getString("password");
 				if (dbPassword.equals(password)) {
+					HttpSession session=request.getSession();
+					session.setAttribute("email", email);
+					session.setAttribute("password", password);
+					session.setAttribute("name", resultSet.getString("name"));
+					
 					RequestDispatcher dispatcher=request.getRequestDispatcher("home");
 					dispatcher.forward(request, response);
 				} else {													//path
