@@ -24,6 +24,8 @@ public class Logout extends HttpServlet {
 		PrintWriter out = response.getWriter();
 
 		out.println("<h1>Logout Done</h1>");
+		session.invalidate();//to destroy session Attributes
+		response.sendRedirect("login.html");
 
 	}
 }

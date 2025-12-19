@@ -38,6 +38,7 @@ public class Login extends HttpServlet {
 					session.setAttribute("email", email);
 					session.setAttribute("password", password);
 					session.setAttribute("name", resultSet.getString("name"));
+					session.setAttribute("number", resultSet.getLong("number"));
 					
 					RequestDispatcher dispatcher=request.getRequestDispatcher("home");
 					dispatcher.forward(request, response);

@@ -1371,3 +1371,51 @@ java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Pa
 
 !ENTRY org.eclipse.lsp4e 2 0 2025-12-18 16:05:21.197
 !MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-12-19 15:20:23.997
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-12-19 15:27:30.759
+!MESSAGE Could not retrieve declared fields
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:239)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:225)
+	at org.eclipse.jdt.internal.core.ClassFile.existsUsingJarTypeCache(ClassFile.java:147)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1513)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1480)
+	at org.eclipse.jdt.internal.core.NameLookup.findType(NameLookup.java:1026)
+	at org.eclipse.jdt.internal.core.NameLookup.findType(NameLookup.java:837)
+	at org.eclipse.jdt.internal.core.NameLookup.findType(NameLookup.java:735)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.find(SearchableEnvironment.java:200)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findType(SearchableEnvironment.java:560)
+	at org.eclipse.jdt.internal.compiler.env.IModuleAwareNameEnvironment.findType(IModuleAwareNameEnvironment.java:96)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.findType(CancelableNameEnvironment.java:59)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:287)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:242)
+	at org.eclipse.jdt.internal.compiler.lookup.ParameterizedTypeBinding.resolve(ParameterizedTypeBinding.java:1317)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:213)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveTypeFor(BinaryTypeBinding.java:1876)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.availableFields(BinaryTypeBinding.java:367)
+	at org.eclipse.jdt.core.dom.TypeBinding.getDeclaredFields(TypeBinding.java:235)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.hasMethodWithName(UnresolvedElementsBaseSubProcessor.java:676)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.addSimilarVariableProposals(UnresolvedElementsBaseSubProcessor.java:621)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.collectVariableProposals(UnresolvedElementsBaseSubProcessor.java:349)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getVariableProposals(UnresolvedElementsSubProcessor.java:138)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:411)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:367)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:753)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
