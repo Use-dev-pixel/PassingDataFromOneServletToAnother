@@ -1,7 +1,0 @@
-package org.jsp;
-
-import javax.servlet.GenericServlet;
-
-public class Login extends GenericServlet {
-
-}
