@@ -8,8 +8,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%-- JspComment --%>
+	<!-- Html Comment --> 
+	//  /* */ JAVA COMMENT
+
+
+
 	<!-- Declaration Tag -->
-	<%!public static String isPrime(int num) {
+	<%!
+	int a=0;//instance variable
+	//class|static method
+	public static String isPrime(int num) {
 
 		for(int i=2;i*i<=num;i++){
 			if(num%i==0)
@@ -19,14 +28,23 @@
 	}%>
 	<!--  scriptlet tag-->
 	<%
-	//List
 	String email = request.getParameter("email");
 	String password = request.getParameter("password");
 	int num=Integer.parseInt(request.getParameter("num"));
 	System.out.println(email);
 	System.out.println(password);
 
-	//out.println("<h1>"+email+"</h1>");
+	
+	config.getServletName();
+	application.getInitParameter("Name");
+	pageContext.getRequest();
+	
+	exception.getMessage();
+	System.out.println(page);
+	//<%=this%>
+	
+	
+	out.println("<h1>"+email+"</h1>");
 	%>
 	<!-- Expression tag -->
 	<h1><%=email%></h1>
