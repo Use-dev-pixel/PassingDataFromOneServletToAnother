@@ -23,7 +23,6 @@
 		hr.setPassword(password);
 		
 		
-		
 		HrBookDao dao=HrBookDao.getHrBookDao();
 		
 		dao.saveHr(hr);
