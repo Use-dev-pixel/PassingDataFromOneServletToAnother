@@ -11,6 +11,14 @@ public class AdharCard {
 	private String address;
 	private String dateOfBirth;
 
+	
+	
+	@Override
+	public String toString() {
+		return "AdharCard [id=" + id + ", adharNumber=" + adharNumber + ", address=" + address + ", dateOfBirth="
+				+ dateOfBirth + "]";
+	}
+
 	public int getId() {
 		return id;
 	}

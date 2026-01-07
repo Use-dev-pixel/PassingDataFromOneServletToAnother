@@ -17,6 +17,15 @@ public class Person {
 	@OneToOne(cascade = CascadeType.ALL)
 	private AdharCard adhar_card;
 
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", adhar_card="
+				+ adhar_card + "]";
+	}
+
 	public int getId() {
 		return id;
 	}

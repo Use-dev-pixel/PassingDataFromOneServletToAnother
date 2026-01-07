@@ -5,35 +5,34 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
+import org.jsp.dao.PersonAdharDao;
 import org.jsp.dto.AdharCard;
 import org.jsp.dto.Person;
 
 public class PersonAdharCardController {
 	public static void main(String[] args) {
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("onetoone_uni");
-		EntityManager entityManager = entityManagerFactory.createEntityManager();
-		EntityTransaction entityTransaction = entityManager.getTransaction();
+		
 		
 		AdharCard card = new AdharCard();
 		card.setId(101);
 		card.setAdharNumber(234263647182l);
 		card.setDateOfBirth("26-08-1932");
-		card.setAddress("Egypt");
+		card.setAddress("Guntur Mirch");
 		
 		
 		Person person=new Person();
 		person.setId(1);
 		person.setName("pavani");
-		person.setEmail("pavani@kfc.in");
+		person.setEmail("pavani@gmail.com");
 		person.setPassword("Pkfc@avani");
 		person.setAdhar_card(card);
 		
+		PersonAdharDao dao=new PersonAdharDao();
+//		dao.savePerson(person);
+//		dao.updatePerosn(person);
+//		dao.removePerson(1);
+		dao.findPersonByEmail("rahul@gmail.com");
 		
-		
-		
-		
-		entityTransaction.begin();
-		entityManager.persist(person);
-		entityTransaction.commit();
+
 	}
 }
