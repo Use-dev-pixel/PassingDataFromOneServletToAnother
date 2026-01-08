@@ -42,7 +42,6 @@ public class PersonAdharDao {
 	public void findPersonByEmail(String email) {
 		Query query=entityManager.createQuery("SELECT person FROM Person person WHERE person.email = ?1");
 		query.setParameter(1, email);
-		
 		Person person = (Person)query.getSingleResult();
 		if (person!=null) {
 			System.out.println(person);
