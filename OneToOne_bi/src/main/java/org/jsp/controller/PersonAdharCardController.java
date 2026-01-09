@@ -10,24 +10,23 @@ public class PersonAdharCardController {
 		
 		
 		AdharCard card = new AdharCard();
-		card.setId(101);
-		card.setAdharNumber(234263647182l);
-		card.setDateOfBirth("26-08-1932");
-		card.setAddress("Guntur Mirch");
+		card.setId(104);
+		card.setAdharNumber(34234523432L);
+		card.setDateOfBirth("21-06-1865");
+		card.setAddress("Golden Mirch");
 		
 		Person person=new Person();
-		person.setId(1);
-		person.setName("pavani");
-		person.setEmail("pavani@gmail.com");
-		person.setPassword("Pkfc@avani");
-		
-		
-		//CASE 1 PERSON HAS ADHARCARD AND ADHAR CARD HAS PERSON
+		person.setId(4);
+		person.setName("Ramesh");
+		person.setEmail("Ramesh@fivestar.com");
+		person.setPassword("Ramesh@12345");
 		person.setAdhar_card(card);
 		card.setPerson(person);
+		
+		
 		dao.savePerson(person);
-		
-		
-
+//		dao.findPersonById(4);
+//		dao.findAdharById(104);
+//		dao.deletePersonById(4);
 	}
 }

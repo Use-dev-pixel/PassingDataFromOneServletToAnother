@@ -30,9 +30,10 @@
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
-    <fullyQualifiedTypeName name="org.jsp.dto.AdharCard"/>
-    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
     <fullyQualifiedTypeName name="org.jsp.dto.Person"/>
     <fullyQualifiedTypeName name="org.jsp.dao.PersonAdharDao"/>
     <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="org.jsp.dto.AdharCard"/>
 </qualifiedTypeNameHistroy>

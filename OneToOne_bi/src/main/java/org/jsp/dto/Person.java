@@ -16,7 +16,7 @@ public class Person {
 	
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="adhar_id")
+	@JoinColumn(name = "adhar_id")
 	private AdharCard adhar_card;
 
 	

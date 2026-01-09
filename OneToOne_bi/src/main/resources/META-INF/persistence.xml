@@ -4,13 +4,13 @@
   http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
 	version="2.1">
 
-	<persistence-unit name="onetoone_bi">
+	<persistence-unit name="onetoone_bi_CRUD">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.cj.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/onetoone_bi?createDatabaseIfNotExist=true" />
+				value="jdbc:mysql://localhost:3306/onetoone_bi_CRUD?createDatabaseIfNotExist=true" />
 			<property name="javax.persistence.jdbc.user"
 				value="root" />
 			<property name="javax.persistence.jdbc.password"
