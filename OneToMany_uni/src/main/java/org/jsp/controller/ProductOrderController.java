@@ -39,6 +39,5 @@ public class ProductOrderController {
 		
 		
 		dao.saveOrder(order);
-		
 	}
 }
