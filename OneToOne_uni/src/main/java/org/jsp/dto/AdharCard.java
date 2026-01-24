@@ -11,7 +11,7 @@ public class AdharCard {
 	private String address;
 	private String dateOfBirth;
 
-	
+	//getters and setters
 	
 	@Override
 	public String toString() {

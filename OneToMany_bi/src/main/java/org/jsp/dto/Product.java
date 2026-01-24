@@ -15,7 +15,10 @@ public class Product {
 	private String type;
 
 	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "order_id")
 	private Orderr order;
+
+	// Getters And Setters
 
 	public int getId() {
 		return id;

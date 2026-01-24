@@ -10,6 +10,12 @@ public class Shop {
 	private String name;
 	private String adddress;
 
+	
+	//Getters And Setters
+	
+	
+	
+	
 	public int getId() {
 		return id;
 	}

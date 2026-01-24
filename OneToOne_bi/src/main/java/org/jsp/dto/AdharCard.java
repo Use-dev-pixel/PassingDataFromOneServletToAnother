@@ -16,6 +16,11 @@ public class AdharCard {
 	@OneToOne(cascade = CascadeType.ALL,mappedBy = "adhar_card")
 	private Person person;
 
+	
+	
+	//Getters and Setters
+	
+	
 	@Override
 	public String toString() {
 		return "AdharCard [id=" + id + ", adharNumber=" + adharNumber + ", address=" + address + ", dateOfBirth="

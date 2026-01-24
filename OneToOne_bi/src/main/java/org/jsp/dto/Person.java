@@ -19,7 +19,7 @@ public class Person {
 	@JoinColumn(name = "adhar_id")
 	private AdharCard adhar_card;
 
-	
+	//Getters and Setters
 	
 	
 	@Override

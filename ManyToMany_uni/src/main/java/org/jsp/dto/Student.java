@@ -19,6 +19,10 @@ public class Student {
 
 	@ManyToMany(cascade = CascadeType.ALL)
 	private List<Batch> batches;
+	
+	
+	
+	//Getters And Setters
 
 	public List<Batch> getBatches() {
 		return batches;

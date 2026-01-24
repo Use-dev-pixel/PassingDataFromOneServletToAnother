@@ -8,7 +8,6 @@ public class PersonAdharCardController {
 	public static void main(String[] args) {
 		PersonAdharDao dao=new PersonAdharDao();
 		
-		
 		AdharCard card = new AdharCard();
 		card.setId(104);
 		card.setAdharNumber(34234523432L);
@@ -23,10 +22,6 @@ public class PersonAdharCardController {
 		person.setAdhar_card(card);
 		card.setPerson(person);
 		
-		
 		dao.savePerson(person);
-//		dao.findPersonById(4);
-//		dao.findAdharById(104);
-//		dao.deletePersonById(4);
 	}
 }

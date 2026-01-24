@@ -16,9 +16,16 @@ public class Batch {
 	private String trainerName;
 	private String subjectName;
 
-	@ManyToMany(cascade = CascadeType.ALL)
+	@ManyToMany(cascade = CascadeType.ALL, mappedBy = "batches")
 	private List<Student> students;
 
+	
+	
+	//Getters and Setters
+
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Batch [bid=" + bid + ", date=" + date + ", time=" + time + ", trainerName=" + trainerName

@@ -5,6 +5,8 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 @Entity
@@ -18,8 +20,16 @@ public class Student {
 	private String address;
 
 	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(joinColumns = @JoinColumn(name = "sid"), 
+	inverseJoinColumns = @JoinColumn(name = "bid"))
 	private List<Batch> batches;
 
+	
+	//Getters and Setters
+	
+	
+	
+	
 	public List<Batch> getBatches() {
 		return batches;
 	}

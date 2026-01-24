@@ -40,14 +40,28 @@ public class PersonAdharDao {
 	}
 
 	public void findPersonByEmail(String email) {
-		Query query=entityManager.createQuery("SELECT person FROM Person person WHERE person.email = ?1");
-		query.setParameter(1, email);
-		Person person = (Person)query.getSingleResult();
-		if (person!=null) {
-			System.out.println(person);
-		} else {
-			System.out.println("Person Not Found");//CE
-		}
+		//ex1
+//		Query query=entityManager.createQuery("SELECT person FROM Person person WHERE person.email = ?1");
+//		query.setParameter(1, email);
+//		Person person = (Person)query.getSingleResult();
+//		if (person!=null) {
+//			System.out.println(person);
+//		} else {
+//			System.out.println("Person Not Found");//CE
+//		}
+		
+		
+		
+		//ex2
+//		Query query=entityManager.createQuery("SELECT person FROM Person person WHERE person.email = :email");
+//		query.setParameter("email", email);
+//		Person person = (Person)query.getSingleResult();
+//		if (person!=null) {
+//			System.out.println(person);
+//		} else {
+//			System.out.println("Person Not Found");//CE
+//		}
+
 		
 		
 	}

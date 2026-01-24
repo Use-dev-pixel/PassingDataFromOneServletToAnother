@@ -12,6 +12,11 @@ public class Batch {
 	private String trainerName;
 	private String subjectName;
 
+	
+	//Getters And Setters
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Batch [bid=" + bid + ", date=" + date + ", time=" + time + ", trainerName=" + trainerName

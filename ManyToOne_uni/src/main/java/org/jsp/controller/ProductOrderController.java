@@ -35,7 +35,6 @@ public class ProductOrderController {
 		shop.setName("Haricharan Shop");
 		shop.setAdddress("JNTU");
 		
-		
 		product1.setShop(shop);
 		product2.setShop(shop);
 		

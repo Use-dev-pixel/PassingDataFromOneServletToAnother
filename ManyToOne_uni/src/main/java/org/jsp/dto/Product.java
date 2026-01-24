@@ -16,6 +16,13 @@ public class Product {
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Shop shop;
 
+	
+	//Getters And Setters
+	
+	
+	
+	
+	
 	public int getId() {
 		return id;
 	}

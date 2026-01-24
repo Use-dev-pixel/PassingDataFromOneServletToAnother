@@ -15,8 +15,10 @@ public class Orderr {
 	private String modeOfPayment;
 	private double totalCost;
 
-	@OneToMany(cascade =  CascadeType.ALL )
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "order")
 	private List<Product> products;
+
+	// Getters And Setters
 
 	public int getId() {
 		return id;

@@ -15,9 +15,14 @@ public class Shop {
 	private String adddress;
 
 	
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "shop")
 	private List<Product> products;
 
+	
+	//Getters And Setters
+	
+	
+	
 	public int getId() {
 		return id;
 	}

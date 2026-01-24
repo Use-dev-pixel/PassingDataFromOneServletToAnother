@@ -17,7 +17,7 @@ public class Person {
 	@OneToOne(cascade = CascadeType.ALL)
 	private AdharCard adhar_card;
 
-	
+	//Getters and Setters
 	
 	
 	@Override

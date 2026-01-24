@@ -3,6 +3,7 @@ package org.jsp.dto;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -14,8 +15,16 @@ public class Product {
 	private String type;
 
 	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="shop_id")
 	private Shop shop;
 
+	
+	
+	//Getters And Setters
+	
+	
+	
+	
 	public int getId() {
 		return id;
 	}

@@ -14,6 +14,17 @@ public class PersonAdharDao {
 	private EntityManager entityManager = entityManagerFactory.createEntityManager();
 	private EntityTransaction entityTransaction = entityManager.getTransaction();
 
+	public void savePerson(Person person) {
+		entityTransaction.begin();
+		entityManager.persist(person);
+		entityTransaction.commit();
+	}
+	
+	public void saveAdharCard(AdharCard card) {
+		entityTransaction.begin();
+		entityManager.persist(card);
+		entityTransaction.commit();
+	}
 	
 	
 	public void deletePersonById(int id) {
@@ -29,17 +40,6 @@ public class PersonAdharDao {
 	}
 	
 	
-	public void savePerson(Person person) {
-		entityTransaction.begin();
-		entityManager.persist(person);
-		entityTransaction.commit();
-	}
-
-	public void saveAdharCard(AdharCard card) {
-		entityTransaction.begin();
-		entityManager.persist(card);
-		entityTransaction.commit();
-	}
 
 	public void findAdharById(int id) {
 		AdharCard card = entityManager.find(AdharCard.class, id);

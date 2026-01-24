@@ -18,6 +18,9 @@ public class Orderr {
 	@OneToMany(cascade =  CascadeType.ALL)
 	private List<Product> products;
 
+	//Getters And Setters
+	
+	
 	public int getId() {
 		return id;
 	}

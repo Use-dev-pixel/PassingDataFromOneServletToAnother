@@ -11,6 +11,10 @@ public class Product {
 	private double cost;
 	private String type;
 
+	//Getters And Setters
+	
+	
+	
 	public int getId() {
 		return id;
 	}

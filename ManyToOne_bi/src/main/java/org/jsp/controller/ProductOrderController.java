@@ -11,7 +11,7 @@ public class ProductOrderController {
 	public static void main(String[] args) {
 		ProductOrderDao dao = new ProductOrderDao();
 		
-		
+
 		Product product1 = new Product();
 		product1.setId(101);
 		product1.setName("apple Iphone 17" );
