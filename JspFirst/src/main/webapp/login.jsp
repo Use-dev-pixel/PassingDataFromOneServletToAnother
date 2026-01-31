@@ -39,7 +39,7 @@
 	application.getInitParameter("Name");
 	pageContext.getRequest();
 	
-	exception.getMessage();
+	//exception.getMessage();
 	System.out.println(page);
 	//<%=this%>
 	

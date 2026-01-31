@@ -6,8 +6,11 @@
 
 	<persistence-unit name="cache">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode> <!-- for caching -->
+		
+		<!-- for caching -->
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode> 
 		<!-- <shared-cache-mode>ALL</shared-cache-mode> -->
+		
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.cj.jdbc.Driver" />
@@ -22,11 +25,15 @@
 			<property name="hibernate.show_sql" value="true" />
 
 			<property name="hibernate.hbm2ddl.auto" value="update" />
+			
+			
 			<!-- for caching -->
 			<property name="hibernate.cache.use_second_level_cache"
 				value="true"></property>
 			<property name="hibernate.cache.region.factory_class"
-				value="org.hibernate.cache.ehcache.EhCacheRegionFactory"></property>
+			s	value="org.hibernate.cache.ehcache.EhCacheRegionFactory"></property>
+				
+				
 		</properties>
 		
 	</persistence-unit>
