@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- For injecting values via Constructor-->
+	<bean id="cat1" class="org.jsp.Cat">
+		<constructor-arg name="name" value="Floof"></constructor-arg>
+		<constructor-arg name="noOfLegs" value="4"></constructor-arg>
+		<constructor-arg name="tail" value="true"></constructor-arg>
+		<constructor-arg name="furQuality" value="soft"></constructor-arg>
+		<constructor-arg name="breed" value="persian"></constructor-arg>
+	</bean>
+</beans>

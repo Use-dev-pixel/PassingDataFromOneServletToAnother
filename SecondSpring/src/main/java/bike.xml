@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean id="engine1" class="org.jsp.Engine">
+		<property name="cc" value="1000"></property>
+		<property name="brandName" value="Devisri Motors"></property>
+		<property name="milage" value="10"></property>
+	</bean>
+	<bean id="bike1" class="org.jsp.Bike">
+		<constructor-arg value="RoyalEnfield" name="brandName"></constructor-arg>
+		<constructor-arg value="Cruise" name="type"></constructor-arg>
+		<constructor-arg value="CNG" name="fuelType"></constructor-arg>
+		<constructor-arg value="2" name="noOfWheels"></constructor-arg>
+		<constructor-arg value="YellowBlack" name="color"></constructor-arg>
+		<constructor-arg value="29999" name="cost"></constructor-arg>
+		<constructor-arg name="engine" ref="engine1"></constructor-arg>
+	</bean>
+
+
+	
+</beans>

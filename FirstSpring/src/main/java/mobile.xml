@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- For injecting values via Setter Methods -->
+	<bean id="mobile1" class="org.jsp.Mobile">
+		<property name="brandName" value="Apple"></property>
+		<property name="ram" value="6"></property>
+		<property name="rom" value="128"></property>
+		<property name="cost" value="56000"></property>
+	</bean>
+</beans>
